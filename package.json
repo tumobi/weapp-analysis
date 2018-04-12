@@ -1,0 +1,35 @@
+{
+  "name": "weapp-analysis",
+  "version": "1.0.0",
+  "description": "微信小程序数据分析 Node.js SDK",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src/**.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tumobi/weapp-analysis.git"
+  },
+  "keywords": [
+    "weapp",
+    "analysis"
+  ],
+  "author": "tumobi <tumobi@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tumobi/weapp-analysis/issues"
+  },
+  "homepage": "https://github.com/tumobi/weapp-analysis#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "dependencies": {
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2"
+  }
+}
