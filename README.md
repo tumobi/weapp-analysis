@@ -7,7 +7,7 @@ Node.js >= 8.0
 
 ### 安装
 ```
-npm install weapp-analysis
+npm install weapp-analysis --save
 ```
 
 ### 使用
@@ -24,27 +24,37 @@ test()
 ```
 
 ### 接口列表
+```javascript
+// 概况趋势（天）
+const dailySummaryTrend = await analysis.getdDailySummaryTrend(beginDate, endDate)
 
-+ 概况趋势（天）analysis.getdDailySummaryTrend
+// 访问趋势（日趋势）
+const dailyVisitTrend = await analysis.getDailyVisitTrend(beginDate, endDate)
 
-+ 访问趋势（日趋势）analysis.getDailyVisitTrend
+// 访问趋势（周趋势）
+const weeklyVisitTrend = await analysis.getWeeklyVisitTrend(beginDate, endDate)
 
-+ 访问趋势（周趋势）analysis.getWeeklyVisitTrend
+// 访问趋势（月趋势）
+const monthlyVisitTrend = await analysis.getMonthlyVisitTrend(beginDate, endDate)
 
-+ 访问趋势（月趋势）analysis.getMonthlyVisitTrend
+// 访问分布
+const visitDistribution = await analysis.getVisitDistribution(beginDate, endDate)
 
-+ 访问分布 analysis.getVisitDistribution
+// 访问留存（日留存）
+const dailyRetainInfo = await analysis.getDailyRetainInfo(beginDate, endDate)
 
-+ 访问留存（日留存）analysis.getDailyRetainInfo
+// 访问留存（周留存）
+const weeklyRetainInfo = await analysis.getWeeklyRetainInfo(beginDate, endDate)
 
-+ 访问留存（周留存）analysis.getWeeklyRetainInfo
+// 访问留存（月留存）
+const monthlyRetainInfo = await analysis.getMonthlyRetainInfo(beginDate, endDate)
 
-+ 访问留存（月留存）analysis.getMonthlyRetainInfo
+// 访问页面 
+const visitPage = await analysis.getVisitPage(beginDate, endDate)
 
-+ 访问页面 analysis.getVisitPage
+// 用户画像 
+const userPortrait = await analysis.getUserPortrait(beginDate, endDate)
 
-+ 用户画像 analysis.getUserPortrait
-
-
+```
 ### 详细接口文档
 [数据 · 小程序](https://developers.weixin.qq.com/miniprogram/dev/api/analysis.html)
