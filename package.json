@@ -1,6 +1,6 @@
 {
   "name": "weapp-analysis",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "微信小程序数据分析 Node.js SDK",
   "main": "lib/index.js",
   "scripts": {
